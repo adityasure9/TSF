@@ -41,13 +41,40 @@ export default function Header() {
             Home
           </Button>
         </li>
+        <li>
+          <Button
+            className={`${path === '/' ? 'active-link' : ''} font-medium text-lg px-5 no-underline hover:underline`}
+            type="link"
+            href="/"
+          >
+            Membership Form
+          </Button>
+        </li>
+        <li>
+          <Button
+            className={`${path === '/' ? 'active-link' : ''} font-medium text-lg px-5 no-underline hover:underline`}
+            type="link"
+            href="/"
+          >
+            Photos
+          </Button>
+        </li>
         <li className="py-2 lg:py-0">
           <Button
             className={`${path === '/team' ? 'active-link' : ''} font-medium text-lg px-5 no-underline hover:underline`}
             type="link"
             href="/team"
           >
-            Team
+            About Us
+          </Button>
+        </li>
+        <li className="py-2 lg:py-0">
+          <Button
+            className={`${path === '/team' ? 'active-link' : ''} font-medium text-lg px-5 no-underline hover:underline`}
+            type="link"
+            href="/team"
+          >
+            Events
           </Button>
         </li>
         <li className="py-2 lg:py-0">
@@ -56,7 +83,7 @@ export default function Header() {
             type="link"
             href="/project"
           >
-            Project
+            Social Media
           </Button>
         </li>
         <li>
@@ -65,7 +92,7 @@ export default function Header() {
             type="link"
             href="/discuss-project"
           >
-            Discuss Project
+            Contact Us
           </Button>
         </li>
       </ul>
